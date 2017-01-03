@@ -1,0 +1,34 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "skypelogo_19.png",
+         "38": "skypelogo_38.png"
+      },
+      "default_popup": "browserActionPopup.html",
+      "default_title": "Skype"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "localization.js", "browserSpecificScript.js", "contentscript.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Quickly access Skype for Web and Share on Skype through your browser",
+   "icons": {
+      "128": "skypelogo_128.png",
+      "16": "skypelogo_16.png",
+      "19": "skypelogo_19.png",
+      "38": "skypelogo_38.png",
+      "48": "skypelogo_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMxFysW3wPKWRPPe3xuJQz3m1ZDLX1hN8EYdP37tRPf7lp8vIhG4xirlXHGK748qcLPc4Lm8WsHDhvS5okN54Kwcnw4T2tBXSCZJxMmlu14HZ5yc/t969QLTPLIbAsasq4NVo40YuP2B7umxV9BlcxZEB9TEKPEQq8DRoKhj9jBQIDAQAB",
+   "manifest_version": 2,
+   "name": "Skype",
+   "options_page": "c2c_options_menu.html",
+   "permissions": [ "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "8.5.0.9167"
+}

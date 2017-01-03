@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ABS logging</title>
+    <link rel="stylesheet" href="/css/absLog.css" />
+
+  </head>
+  <body>
+    <div id="message" class="logging-page">
+      <header class="url">
+        <img src="/img/abs_avira_umbrella_white.svg" alt="Avira" width="18" />
+        <span>ABS Log for debugging</span>
+      </header>
+
+      <article class="content">
+        <section class="desc">This is for debugging purpose only. Start logging to collect events. </section>
+        <input
+          id="cb-start-logging"
+          class="abs-checkbox"
+          type="checkbox"
+          name="check"
+        />
+        <label class="abs-checkbox-label" for="cb-start-logging">
+          <div class="check">
+            <span>Start logging</span>
+          </div>
+        </label>
+        <button id="btn-download" class="abs-button">Download</button>
+        <button id="btn-clear" class="abs-button">Clear logs</button>
+
+      </article>
+    </div>
+  </body>
+  <script src="/js/absLog.js"></script>
+</html>

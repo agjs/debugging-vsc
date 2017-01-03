@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Launch Chrome against localhost, with sourcemaps",
+        "type": "chrome",
+        "request": "launch",
+        "file": "${workspaceRoot}/index.html",
+        "sourceMaps": true,
+        "webRoot": "${workspaceRoot}",
+        "userDataDir": "${workspaceRoot}/.vscode/chrome",
+        "skipFiles": [
+            "jquery.js"
+        ]
+    }]
+}
